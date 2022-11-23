@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h1>{{ post.title }}</h1>
+<div class="row">
+    <meta charset="utf-8">
+    <div class="col-md-4">
+        <h5>{{ post.categories }}:</h5>
+        <p>{{ post.body }}</p>
+        <br>
+        <h5>Комментарии:</h5>
+        <p>{{ comment.author }}</p>
+        <p>{{ comment.body }}</p>
+    </div>
+</div>
+{% endblock %}
